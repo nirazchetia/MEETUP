@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.RegisterActivity">
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/newUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Set your User ID"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/newUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/newUserId"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/newUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/backLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
